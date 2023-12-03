@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Images/checkout-payment.jpeg), no-repeat center center/cover;
+  /* background-image: radial-gradient(black); */
+  width: 100%;
+  height: 100vh;
+  background-position-y: -12rem;
+  background-position-x: 3rem;
+  /* opacity: 1; */
+  z-index: -1;
+}
+.container > h1 {
+  text-align: center;
+  margin: 18px 0 24px 0;
+}
+.formContainer {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff00;
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formGrid {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "name name name"
+    "number number number"
+    "exp exp exp"
+    "day month year";
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.expiration {
+  grid-area: exp;
+}
+.name {
+  grid-area: name;
+}
+
+.number {
+  grid-area: number;
+}
+
+.day {
+  grid-area: day;
+}
+
+.month {
+  grid-area: month;
+}
+
+.year {
+  grid-area: year;
+}
+
+@media (max-width: 600px) {
+  .formGrid {
+    grid-template-areas:
+      "name name name"
+      "number number number"
+      "day month year";
+  }
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 12rem 2rem 2rem 2rem;
+}
+.bottom > .buttons > a {
+  padding: 0 18px;
+}
+.bottom > .buttons {
+  padding: 8px 0;
+}

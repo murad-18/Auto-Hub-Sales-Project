@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Images/login-signup.jpeg), no-repeat center center/cover;
+  /* background-image: radial-gradient(black); */
+  width: 100%;
+  height: 100vh;
+  background-position-y: -10rem;
+  background-position-x: 14rem;
+  /* opacity: 1; */
+  z-index: -1;
+}
+.container {
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form > h1 {
+  color: white;
+  margin-top: 2rem;
+}
+form {
+  margin: 3rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+form > label {
+  color: white;
+}
+form > input {
+  padding: 0.5rem 16rem 0.5rem 1rem;
+  margin: 6px 0 18px 0;
+  border-radius: 4px;
+  border: none;
+}
+.formButton > button {
+  padding: 10px 0px;
+  margin: 0 30px 0 32px;
+}
+
+.formButton > button > a {
+  padding: 10px 40px;
+}
+.form > button {
+  position: absolute;
+  bottom: 12vh;
+  left: 8vw;
+  padding: 10px 0px;
+  margin: 0 30px 0 32px;
+}
+.form > button > a {
+  padding: 10px 40px;
+}

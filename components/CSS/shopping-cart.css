@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  background-color: rgba(54, 69, 79);
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.top > h1:nth-child(2) {
+  color: rgb(189, 0, 0);
+  cursor: pointer;
+}
+.top > h1 {
+  margin: 12px 18px;
+}
+.products {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.products img {
+  width: 350px;
+}
+.prod1 {
+  display: flex;
+  margin: 14px 2rem;
+  justify-content: space-evenly;
+}
+.prodName {
+  /* margin: 14px 74px; */
+}
+.prodName > h2 {
+  font-size: 42px;
+}
+.itemNum {
+  display: flex;
+  align-items: center;
+  margin: 6rem 0 0 12rem;
+}
+.itemNum > p {
+  font-size: 28px;
+  margin: 4px 12px;
+  font-weight: bolder;
+}
+.itemNum > button {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  font-size: 32px;
+  font-weight: bolder;
+  cursor: pointer;
+  border: 3px solid black;
+}
+.last {
+  display: flex;
+  flex-direction: column;
+  margin: 0 42px;
+  font-size: 32px;
+}
+.last > p:nth-child(2) {
+  color: rgb(189, 0, 0);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.last > p {
+  padding: 2rem 0;
+}
+.divider {
+  height: 5px;
+  width: 900px;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 31rem;
+}
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 9rem;
+}
+.total > div {
+  padding: 1rem 0 0 6rem;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.bottom > button {
+  margin: 0 2rem;
+  padding: 10px 0;
+}
+.bottom > button > a {
+  padding: 0 42px;
+}
