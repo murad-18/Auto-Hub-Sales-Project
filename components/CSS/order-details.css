@@ -1,0 +1,106 @@
+.container {
+  background-color: rgba(54, 69, 79);
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  padding-top: 2rem;
+}
+.cart {
+  display: flex;
+  padding-left: 4rem;
+}
+.line {
+  width: 90%;
+  height: 5px;
+  background-color: white;
+  margin-left: 4rem;
+  border-radius: 10px;
+}
+.products {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.products img {
+  width: 150px;
+  height: 100px;
+}
+.prod1 {
+  display: flex;
+  margin: 14px 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.prodName {
+  /* margin: 14px 74px; */
+}
+.prodName > h2 {
+  font-size: 22px;
+}
+.itemNum {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 12rem;
+}
+.itemNum > p {
+  font-size: 18px;
+  /* margin: 4px 12px; */
+  font-weight: bolder;
+}
+.itemNum > button {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  font-size: 22px;
+  font-weight: bolder;
+  cursor: pointer;
+  border: 3px solid black;
+}
+.last {
+  display: flex;
+  flex-direction: column;
+  margin: 0 42px;
+  font-size: 22px;
+}
+.last > p {
+  padding: 2rem 0;
+}
+.divider {
+  height: 5px;
+  width: 200px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.total {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 9rem;
+}
+.total > div {
+  padding: 0 0 0 6rem;
+}
+.itemCount {
+  display: flex;
+}
+.itemCount > h3 {
+  margin: 1rem;
+}
+.details {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  align-items: center;
+}
+.info > h3 {
+  margin-bottom: 2rem;
+}
+.buttons {
+  padding: 0.25rem 1rem;
+}
